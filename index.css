@@ -1,0 +1,651 @@
+/* Basic CSS for styling the navbar */
+body {
+    /* background-image: url('wrapper.png');
+    background-size: cover;
+    background-position: center 10%;  */
+}
+/* .diamond{
+    height: 40px;
+    width: 40px;
+    margin-top: 100px;
+} */
+h3{
+ color: #80bc40;
+ margin-bottom: -30px;
+}
+.logo {
+    max-width: 200px; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Allows the image's height to scale proportionally with its width */
+    display: block; /* Removes any default spacing around the image */
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.footer-container {
+    background-color: #f2f2f2;
+   
+    padding: 40px 0;
+    padding-right: 0;
+    width: 200%; 
+    margin-left: -230px;
+    margin-top: 130px;
+}
+
+.footer-content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.sponsor-logos {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.sponsor-logos img {
+    max-width: 100px; /* Adjust the max width as needed */
+    margin: 10px; /* Add spacing between logos */
+}
+
+
+
+
+.boo {
+    /* background-image: url('wrapper.png');
+    background-size: cover;
+    background-position: center 30%; 
+    padding-top: 100px;
+    max-width: 400%;
+    height: auto;
+    display: block; */
+    
+}
+
+/* Hide the image when the screen width is below 768px */
+/* @media (max-width: 768px) {
+    .boo {
+        display: none;
+    }
+} */
+
+
+
+
+.navbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.navbar-item {
+    position: relative;
+}
+
+.navbar-item a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-item:hover {
+    background-color: #ffffff;
+}
+
+/* Styling for the underline effect */
+.navbar-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #80bc40;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.navbar-item:hover::after {
+    width: 100%;
+}
+
+/* Styling for the dropdown */
+.dropdown {
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.dropdown-content {
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    /* background-color: #80bc40; */
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+.background {
+    
+    padding: 0 25px 25px;
+    position: relative;
+    width: 100%;
+  }
+  h4{
+    color: #000000;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 12px;
+
+  }
+
+.vector-icon {
+position: relative;
+padding-right: 10px;
+}
+.vector-iconh {
+position: relative;
+width: 20%;
+height: auto;
+padding-right: 5px;
+
+}
+        
+    
+    
+  .pricing-button {
+    background-color: #80bc40;
+    border-radius: 5px;
+    color: #ffffff;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Place content at the start and end */
+    margin: 25px 0;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+}
+
+.pricing-button img {
+    width: 20px; 
+    height: 20px; 
+    margin-left: 10px; 
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+
+  
+ 
+  @media (min-width: 900px) {
+    .background {
+      padding: 0 0 25px;
+    }
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 50px 0 0;
+    /* max-width: 960px; */
+    width: 100%;
+  }
+  
+  .panel {
+    position: relative;
+    width: 130%;
+    z-index: 10;
+  }
+  
+  .pricing-table {
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 900px) {
+    .pricing-table {
+      flex-direction: row;
+    }
+  }
+  
+  .pricing-table * {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .pricing-plan {
+    position: relative;
+    background:white;
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 400px;
+    
+  }
+  
+  .pricing-plan:last-child {
+    border-bottom: none;
+  }
+  
+  @media (min-width: 900px) {
+    .pricing-plan {
+      border-bottom: none;
+      border-right: 1px solid #e1f1ff;
+      flex-basis: 100%;
+      padding: 25px 50px;
+    }
+  
+    .pricing-plan:last-child {
+      border-right: none;
+    }
+  }
+  /* //////////////// */
+  .pricing-plan1 {
+    
+    position: relative;
+    
+    background: linear-gradient(138.81deg, #6134c1, rgba(44, 11, 116, 0.99));
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 400px;
+  }
+  
+  .pricing-plan1:last-child {
+    border-bottom: none;
+  }
+  
+  @media (min-width: 900px) {
+    .pricing-plan1 {
+      border-bottom: none;
+      border-right: 1px solid #e1f1ff;
+      flex-basis: 100%;
+      padding: 25px 50px;
+    }
+  
+    .pricing-plan1:last-child {
+      border-right: none;
+    }
+  }
+  .pricing-features1 {
+    color: #ffffff;
+    font-weight: 00;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+  }
+  
+  .pricing-features1-item {
+    /* border-top: 1px solid #e1f1ff; */
+    font-size: 12px;
+    line-height: 1.7;
+    padding: 15px 0;
+    text-align: left;
+    color: #ffffff;
+  }
+  
+  .pricing-features1-item:last-child {
+    border-bottom: 0px solid #e1f1ff;
+  }
+  
+  /* /////////////// */
+  
+  .pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+  
+  .pricing-header {
+    color: #6134c1;
+    font-weight: 850;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .pricing-header1 {
+    color: #ffffff;
+    font-weight: 520;
+    font-size: 16px;
+
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  
+  .pricing-features {
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 2px;
+    
+    
+  }
+  .pricing-features a{
+        color: #000000;
+
+  }
+  .pricing-features-item {
+    /* border-top: 1px solid #e1f1ff; */
+    
+    font-size: 12px;
+    line-height: 1.7;
+    padding: 15px 0;
+    text-align: left;
+  }
+  
+  
+  
+  .pricing-price {
+    color: #6134c1;
+    display: block;
+    font-size: 85px;
+    font-weight: 700;
+  }
+  
+  .pricing-button {
+    background-color: #80bc40;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+  }
+  
+  .pricing-button:hover,
+  .pricing-button:focus {
+    background-color: #e1f1ff;
+  }
+  
+  .pricing-button.is-featured {
+    background-color: #48aaff;
+    color: #fff;
+  }
+  
+  .pricing-button.is-featured:hover,
+  .pricing-button.is-featured:active {
+    background-color: #269aff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-demo,
+.free,
+.talk,
+.navbar-sign {
+    cursor: pointer;
+    padding: 15.5px 26px 16.05px;
+    position: relative;
+    border: 2px solid #80bc40;
+    margin-right: 300px;
+    margin-left: -100px;
+    margin-bottom: 10px;
+    
+}
+
+.navbar-demo {
+    background-color: #80bc40;
+    color: white;
+    justify-content: center;
+    margin-left: -10px; 
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.free, .talk,.navbar-sign {
+    background-color: transparent;
+    color: #80bc40;
+    align-items: center;
+}
+
+/* .talk{
+    cursor: pointer;
+    border: 1px solid #80bc40;
+    padding: 15.5px 26px 16.049999237060547px;
+    background-color: #80bc40;
+    color: white;
+    margin-bottom: 80px; 
+    align-self: flex-start;
+    
+  
+} */
+ /* Style for the price table container */
+.price-table-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Style for the price table */
+.price-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+/* Style for each pricing column */
+.price-column {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    flex: 1;
+}
+
+/* Style for pricing text */
+.price {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style for the list of features */
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+/* Style for the "Buy Now" button */
+.buy-button {
+    background-color: #80bc40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+/* Style for the arrow */
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; /* Adjust the width of the arrow */
+    border-right: 5px solid transparent; /* Adjust the width of the arrow */
+    border-top: 5px solid #80bc40; /* Green color */
+    margin-left: 5px; /* Adjust the spacing between "Pricing" and the arrow */
+}
+
+
+
+/* Media query to make the price table responsive */
+@media (max-width: 768px) {
+    .price-table-container {
+        display: block;
+    }
+
+    .price-column {
+        flex: 1;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column; /* Display items in a column on smaller screens */
+    }
+}
+
+.banner {
+    background-image: url('wrapper.png'); 
+  
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .content h2 {
+        font-family:Arial, sans-serif;
+        color: #000000;
+        font-size: 60px;
+    }
+    .content p {
+        width: 50%;
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 2;
+    }
+    
+    .button-container {
+        text-align: center; /* Optional: Center-align the buttons */
+    }
+    
+    .btn1,
+    .btn2 {
+        display: inline-block; /* Display buttons in the same line */
+        margin-left: -400px; 
+        margin-right: 400px;/* Add some margin to separate the buttons */
+    }
+    
+    .btn1 a,
+    .btn2 a {
+        text-decoration: none;
+        background: #80bc40;
+        color: #fff;
+        padding: 15px 10px;
+        border: none;
+        width: 130px;
+        text-align: center;
+    }
+    
+    
+    .btn2 a {
+        text-decoration: none;
+        background: transparent;
+        border: 2px solid #80bc40; /* Add a green border */
+        color: #80bc40;
+        padding: 15px 10px;
+        width: 130px;
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+    .wrapper {
+        width: 1060px;
+        margin: auto;
+        padding-top: 12%;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .wrapper {
+            width: 75%;
+            padding-top: 26%;
+        }
+        .content {
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 60px;
+        }
+        .content p {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .banner {
+            background-position: 60%;
+        }
+        .wrapper {
+            width: 75%;
+            padding-top: 26%;
+        }
+        .content h2 {
+            font-size: 25px;
+        }
+        .content p {
+            width: 100%;
+        }
+        .btn1 a {
+            padding: 9px 4px;
+            width: 105px;
+        }
+        
+    }
+    
